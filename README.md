@@ -1,3 +1,5 @@
+#OBS - Nyt repository - https://github.com/BastianVIA/ShoppingCart_final.git
+
 # ShoppingCart
 
 Dette er et skoleprojekt i faget AND på Software Engineering - VIA Horsens.
