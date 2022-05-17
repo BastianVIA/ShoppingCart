@@ -1,0 +1,144 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.shoppingcart"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:4:5-5:11
+11-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:4:22-62
+12
+13    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+14    <uses-feature
+14-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+15        android:name="android.hardware.camera"
+15-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+16        android:required="false" />
+16-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+17    <uses-feature
+17-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+18        android:name="android.hardware.camera.front"
+18-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+19        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+19-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+20    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+21    <uses-feature
+21-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+22        android:name="android.hardware.camera.autofocus"
+22-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+23        android:required="false" />
+23-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+24    <uses-feature
+24-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+25        android:name="android.hardware.camera.flash"
+25-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+26        android:required="false" />
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+27    <uses-feature
+27-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+28        android:name="android.hardware.screen.landscape"
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+29        android:required="false" />
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+30    <uses-feature
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+31        android:name="android.hardware.wifi"
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+32        android:required="false" />
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+33
+34    <application
+34-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:6:5-28:19
+35        android:allowBackup="true"
+35-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:7:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.7.0] C:\Users\basti\.gradle\caches\transforms-3\d79cd730aff89e16bbe6bbee05f6ceb1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+39        android:icon="@mipmap/ic_launcher"
+39-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:8:9-43
+40        android:label="@string/app_name"
+40-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:9:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:10:9-54
+42        android:supportsRtl="true"
+42-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:11:9-35
+43        android:testOnly="true"
+44        android:theme="@style/Theme.ShoppingCart" >
+44-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:12:9-50
+45        <activity
+45-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:13:9-23:20
+46            android:name="com.example.shoppingcart.MainActivity"
+46-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:14:13-41
+47            android:exported="true"
+47-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:15:13-36
+48            android:label="@string/app_name"
+48-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:16:13-45
+49            android:theme="@style/Theme.ShoppingCart.NoActionBar" >
+49-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:17:13-66
+50            <intent-filter>
+50-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:18:13-22:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:19:17-69
+51-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:19:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:21:17-77
+53-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:21:27-74
+54            </intent-filter>
+55        </activity>
+56        <activity
+56-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:24:9-27:56
+57            android:name="com.example.shoppingcart.ui.unlock.CaptureAct"
+57-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:24:19-55
+58            android:screenOrientation="portrait"
+58-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:25:13-49
+59            android:stateNotNeeded="true"
+59-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:26:13-42
+60            android:theme="@style/zxing_CaptureTheme" />
+60-->C:\Users\basti\AndroidStudioProjects\ShoppingCart2\app\src\main\AndroidManifest.xml:27:13-54
+61        <activity
+61-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+62            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+62-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+63            android:clearTaskOnLaunch="true"
+63-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+64            android:screenOrientation="sensorLandscape"
+64-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+65            android:stateNotNeeded="true"
+65-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+66            android:theme="@style/zxing_CaptureTheme"
+66-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+67            android:windowSoftInputMode="stateAlwaysHidden" />
+67-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\basti\.gradle\caches\transforms-3\ff038fc3089d4483133035facd3ba2d7\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+68
+69        <provider
+69-->[androidx.emoji2:emoji2:1.0.0] C:\Users\basti\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+70            android:name="androidx.startup.InitializationProvider"
+70-->[androidx.emoji2:emoji2:1.0.0] C:\Users\basti\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+71            android:authorities="com.example.shoppingcart.androidx-startup"
+71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\basti\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+72            android:exported="false" >
+72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\basti\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+73            <meta-data
+73-->[androidx.emoji2:emoji2:1.0.0] C:\Users\basti\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+74                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+74-->[androidx.emoji2:emoji2:1.0.0] C:\Users\basti\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+75                android:value="androidx.startup" />
+75-->[androidx.emoji2:emoji2:1.0.0] C:\Users\basti\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+76            <meta-data
+76-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\basti\.gradle\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+77                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+77-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\basti\.gradle\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+78                android:value="androidx.startup" />
+78-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\basti\.gradle\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+79        </provider>
+80    </application>
+81
+82</manifest>
